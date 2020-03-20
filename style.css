@@ -1,0 +1,14 @@
+body{
+  background-image: url("https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/2631478/910/689/m2/fpnw/wm1/jifji2xf1zxkvc5ccfxksybbahbzl5wtx0ljt17lvyfebs1gw1j7sirnm5tcexuy-.jpg?1493751250&s=036367499282c13871fc02ee19445858");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+  ;
+}
+
+
+
+.hidden{
+  display: none;
+}

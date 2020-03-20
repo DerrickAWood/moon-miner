@@ -1,26 +1,74 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Moon Minor</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
 
-  </head>
+<head>
+  <title>Moon Minor</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 
-  <body>
-    <header>
-      Moon Minor
-    </header>
+</head>
+
+<body>
+
+  <header class="container-fluid mt-5">
+    <div class="row">
+      <div class="col-12 text-white text-center">
+        <h1>Moon Miner</h1>
+      </div>
+    </div>
+  </header>
+
+  <main class="container-fluid">
+    <div class="row">
+      <div class="col-4">
+        <h3 class="text-white">Inventory</h3>
+        <div class="card" style="width: 18rem;">
+          <div class="card-header">
+            Moon Rocks: <span id="moonRockElem">0</span>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">PickAxe: <span id="axe">0</span></li>
+            <li class="list-group-item">MoonRover: <span id="roverElem">0</span></li>
+          </ul>
+        </div>
+        <div class="card mt-3">
+          <h5 class="card-header">PickAxe: cost <span id="cost">5</span></h5>
+          <div class="card-body">
+            <h5 class="card-title">x2 moon rocks each hit</h5>
+            <a href="#" id="buy-axe"  class="btn btn-primary" onclick="addTool()">BUY</a>
+          </div>
+        </div>
+        <div class="card mt-3">
+          <h5 class="card-header">MoonRover: cost 20</h5>
+          <div class="card-body">
+            <h5 class="card-title">Mines moon rocks on auto for 10s</h5>
+            <a href="#" class="btn btn-primary" onclick="addRover()">BUY</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-8">
+        <img class="mt-5" onclick="play()" src="https://www.muralswallpaper.com/app/uploads/moon-and-stars-space%EF%BB%BF-plain-1-820x547.jpg">
+      </div>
+    </div>
+  </main>
 
 
 
-      
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
-  </body>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
 </html>
