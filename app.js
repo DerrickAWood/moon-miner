@@ -60,8 +60,15 @@ function addRover(){
     roverCost++
     roverElem.innerText = rover.toString()
     // not working //
+    roverClicked()
   }
 }
 
+function roverClicked(){
+  setInterval(function (){
+    clickCount+= 5
+    moonRockElem.innerText = clickCount.toString()
+  }, 1000)
+}
 
 
