@@ -31,6 +31,8 @@
           </div>
           <ul class="list-group list-group-flush">
             <li class="list-group-item">PickAxe: <span id="axe">0</span></li>
+            <li class="list-group-item">JackHammer: <span id="hammerElem">0</span></li>
+            <li class="list-group-item">Excavator: <span id="excavatorElem">0</span></li>
             <li class="list-group-item">MoonRover: <span id="roverElem">0</span></li>
           </ul>
         </div>
@@ -42,9 +44,23 @@
           </div>
         </div>
         <div class="card mt-3">
-          <h5 class="card-header">MoonRover: cost 20</h5>
+          <h5 class="card-header">JackHammer: cost <span id="hammerCostElem">10</span></h5>
           <div class="card-body">
-            <h5 class="card-title">Mines moon rocks on auto for 10s</h5>
+            <h5 class="card-title">x3 moon rocks each hit</h5>
+            <a href="#" class="btn btn-primary" onclick="addJackhammer()">BUY</a>
+          </div>
+        </div>
+        <div class="card mt-3">
+          <h5 class="card-header">Excavator: cost <span id="excavatorCostElem">15</span></h5>
+          <div class="card-body">
+            <h5 class="card-title">x4 moon rocks each hit</h5>
+            <a href="#" class="btn btn-primary" onclick="addExcavator()">BUY</a>
+          </div>
+        </div>
+        <div class="card mt-3">
+          <h5 class="card-header">MoonRover: cost <span id="roverCost">20</span></h5>
+          <div class="card-body">
+            <h5 class="card-title">Mines moon rocks on auto every second</h5>
             <a href="#" class="btn btn-primary" onclick="addRover()">BUY</a>
           </div>
         </div>
