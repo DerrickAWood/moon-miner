@@ -21,24 +21,45 @@ let choices = [
   {
     name: "click",
     points: 1,
-    num: 1
   },
   {
     name: "PickAxe",
     points: 2,
-    num: 1
+    cost: 5
   },
   {
     name: "JackHammer",
     points: 5,
-    num: 1
+    cost: 10
+  },
+  {
+    name: "Excavator",
+    points: 10,
+    cost: 15
   },
   {
     name: "MoonRover",
-    points: 10,
-    num: 1
+    points: 5,
+    cost: 20
   }
 ]
+
+
+function play2(choices){
+  clickCount++
+  moonRockElem.innerText = clickCount.toString()
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 function play(){
