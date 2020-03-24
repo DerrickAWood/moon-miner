@@ -17,43 +17,25 @@ let Excavator = 0
 let excavatorElem = document.getElementById("excavatorElem")
 
 
-let choices = [
-  {
-    name: "click",
-    points: 1,
-  },
-  {
-    name: "PickAxe",
-    points: 2,
-    cost: 5
-  },
-  {
-    name: "JackHammer",
-    points: 5,
-    cost: 10
-  },
-  {
-    name: "Excavator",
-    points: 10,
-    cost: 15
-  },
-  {
-    name: "MoonRover",
-    points: 5,
-    cost: 20
+
+// 
+
+class Choices{
+  constructor(click, pickAxe, jackHammer, excavator, moonRover){
+    this.click = click
+    this.pickAxe = pickAxe
+    this.jackHammer = jackHammer
+    this.excavator = Excavator
+    this.moonRover = moonRover
   }
-]
-
-
-function play2(choices){
-  clickCount++
-  moonRockElem.innerText = clickCount.toString()
 }
 
+function play2(Choices){
+  clickCount++
+  moonRockElem.innerText = clickCount.toLocaleString()
+}
 
-
-
-
+// 
 
 
 
